@@ -9,11 +9,11 @@ This repository explains the use of Singular Value Decomposition (SVD) for learn
 A = UΣV^T
 
 Where:
-- \( U \) is a matrix whose columns are the left singular vectors of \(A\).
-- \( \Sigma \) is a diagonal matrix containing the singular values of \(A\).
-- \( V \) (or \( V^T \)) is a matrix whose columns are the right singular vectors of \(A\).
+- U is a matrix whose columns are the left singular vectors of A.
+- Σ  is a diagonal matrix containing the singular values of A.
+- V (or V^T) is a matrix whose columns are the right singular vectors of A.
 
-**Learning Word Representations:** To learn word representations, we often use a co-occurrence matrix \( X \), where each entry \( X_{ij} \) represents the number of times word \( i \) co-occurs with word \( j \) within a certain context window.
+**Learning Word Representations:** To learn word representations, we often use a co-occurrence matrix X, where each entry X_{ij} represents the number of times word i  co-occurs with word j within a certain context window.
 
 By applying SVD to the co-occurrence matrix, we can reduce its dimensionality and obtain dense word vectors that capture semantic relationships between words.
 
@@ -38,11 +38,11 @@ Consider a small corpus: "I like deep learning" and "I like NLP".
 
 3. **Apply SVD:**
    
-   Let \( X \) be the co-occurrence matrix. Perform SVD on \( X \):
+   Let  X be the co-occurrence matrix. Perform SVD on  X:
 
-   \[ X = U \Sigma V^T \]
+   X = UΣV^T
 
-   For simplicity, let's assume we truncate to \( k = 2 \) dimensions.
+   For simplicity, let's assume we truncate to k = 2  dimensions.
 
 ## 3. Mathematical Explanation with Examples
 
@@ -50,25 +50,29 @@ Consider a small corpus: "I like deep learning" and "I like NLP".
 
 1. **Compute \( X^T X \):**
    
+
    Given the co-occurrence matrix \( X \):
 
-   \[
-   X^T X = 
-   \begin{bmatrix}
-       0 & 2 & 0 & 0 & 0 \\
-       2 & 0 & 1 & 1 & 1 \\
-       0 & 1 & 0 & 1 & 0 \\
-       0 & 1 & 1 & 0 & 0 \\
-       0 & 1 & 0 & 0 & 0
-   \end{bmatrix}
-   \begin{bmatrix}
-       0 & 2 & 0 & 0 & 0 \\
-       2 & 0 & 1 & 1 & 1 \\
-       0 & 1 & 0 & 1 & 0 \\
-       0 & 1 & 1 & 0 & 0 \\
-       0 & 1 & 0 & 0 & 0
-   \end{bmatrix}^T
-   \]
+\[ X^T X = \]
+
+|       | I | like | deep | learning | NLP |
+|-------|---|------|------|----------|-----|
+| I     | 0 | 2    | 0    | 0        | 0   |
+| like  | 2 | 0    | 1    | 1        | 1   |
+| deep  | 0 | 1    | 0    | 1        | 0   |
+| learning | 0 | 1    | 1    | 0        | 0   |
+| NLP   | 0 | 1    | 0    | 0        | 0   |
+
+\(\times\)
+
+|       | I | like | deep | learning | NLP |
+|-------|---|------|------|----------|-----|
+| I     | 0 | 2    | 0    | 0        | 0   |
+| like  | 2 | 0    | 1    | 1        | 1   |
+| deep  | 0 | 1    | 0    | 1        | 0   |
+| learning | 0 | 1    | 1    | 0        | 0   |
+| NLP   | 0 | 1    | 0    | 0        | 0   |
+
 
 2. **Compute Eigenvalues and Eigenvectors:**
 
