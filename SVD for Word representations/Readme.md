@@ -1,6 +1,6 @@
 # SVD for Learning Word Representations
 
-This repository explains the use of Singular Value Decomposition (SVD) for learning word representations in detail.
+This repository uses Singular Value Decomposition (SVD) for learning word representations.
 
 ## 1. Theory
 
