@@ -48,12 +48,12 @@ Consider a small corpus: "I like deep learning" and "I like NLP".
 
 **Step-by-Step SVD:**
 
-1. **Compute \( X^T X \):**
+1. **Compute X^T X:**
    
 
-   Given the co-occurrence matrix \( X \):
+   Given the co-occurrence matrix X:
 
-\[ X^T X = \]
+X^T X = 
 
 |       | I | like | deep | learning | NLP |
 |-------|---|------|------|----------|-----|
@@ -63,7 +63,7 @@ Consider a small corpus: "I like deep learning" and "I like NLP".
 | learning | 0 | 1    | 1    | 0        | 0   |
 | NLP   | 0 | 1    | 0    | 0        | 0   |
 
-\(\times\)
+times 
 
 |       | I | like | deep | learning | NLP |
 |-------|---|------|------|----------|-----|
@@ -76,30 +76,9 @@ Consider a small corpus: "I like deep learning" and "I like NLP".
 
 2. **Compute Eigenvalues and Eigenvectors:**
 
-   The eigenvalues of \( X^T X \) give us the singular values (diagonal entries of \( \Sigma \)), and the eigenvectors give us \( U \) and \( V \).
+   The eigenvalues of  X^T X give us the singular values (diagonal entries of Σ , and the eigenvectors give us U and V.
 
-3. **Form the Matrices \( U \), \( \Sigma \), and \( V^T \):**
-
-   For our example, this results in:
-
-   \[
-   U = 
-   \begin{bmatrix}
-       ... \\
-       ... \\
-   \end{bmatrix}, \quad
-   \Sigma = 
-   \begin{bmatrix}
-       ... & 0 \\
-       0 & ... \\
-   \end{bmatrix}, \quad
-   V^T = 
-   \begin{bmatrix}
-       ... & ... & ... \\
-       ... & ... & ... \\
-   \end{bmatrix}
-   \]
-
+3. **Form the Matrices U, Σ, and V^T:**
    (Note: Actual values would depend on the calculation of eigenvalues and eigenvectors.)
 
 ## 4. Real-time Example of a Corpus
@@ -130,9 +109,9 @@ Consider a small corpus:
 
 3. **Apply SVD:**
    
-   Perform SVD on the co-occurrence matrix \( X \):
+   Perform SVD on the co-occurrence matrix X:
 
-   \[ X = U \Sigma V^T \]
+   X= UΣV^T
 
 ## 5. Code Example for a Small Corpus
 
