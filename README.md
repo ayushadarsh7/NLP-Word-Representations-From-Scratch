@@ -6,7 +6,7 @@ This repository explains the use of Singular Value Decomposition (SVD) for learn
 
 **Singular Value Decomposition (SVD):** SVD is a matrix factorization technique that decomposes a matrix \(A\) into three matrices:
 
-\[ A = U \Sigma V^T \]
+A = UΣV^T
 
 Where:
 - \( U \) is a matrix whose columns are the left singular vectors of \(A\).
