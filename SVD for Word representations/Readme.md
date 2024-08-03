@@ -1,7 +1,7 @@
 # SVD for word representations
 
 This repository contains a Python script to perform **Singular Value Decomposition (SVD)** on a **Hindi** text corpus. The script reads the text data, creates a co-occurrence matrix, and then uses SVD to generate word representations.
-
+[![svd.png](https://i.postimg.cc/wTrGj2dL/svd.png)](https://postimg.cc/jLzX8z2S)
 ## Requirements
 
 - Python 3.x
