@@ -13,7 +13,7 @@ The Skip-gram model aims to predict context words given a target word. This impl
 
 ## Files in Directory
 - We have **`pre_processed_corpus`** directory containing 4 corpora of text files on which the model is trained.
-- `Skip_Gram_Model_Theory` contains all the theory and mathematical equations which are the basis for coding the model from scratch.
+- **`Skip_Gram_Model_Theory`** contains all the theory and mathematical equations which are the basis for coding the model from scratch.
   
 
 
