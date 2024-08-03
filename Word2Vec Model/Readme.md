@@ -19,7 +19,7 @@ To train the Skip-gram model, we have a corpus of text files.The model is traine
 - `vocab_size`: Size of the vocabulary
 - `embedding_dim`: Dimension of the word embeddings
 - `window_size`: Size of the context window
-We have `pre_processed_corpus` directory containing 4 corpora of text files on which the model is trained.
+- We have `pre_processed_corpus` directory containing 4 corpora of text files on which the model is trained.
 ### Generating Text
 
 After training the model, we can generate text based on the learned word embeddings. We will provide an input word and specify the number of words we want to generate.
