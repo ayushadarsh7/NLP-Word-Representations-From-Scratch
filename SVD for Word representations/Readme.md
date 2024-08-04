@@ -16,7 +16,7 @@ This repository contains the Python script to perform **Singular Value Decomposi
 - `word_representations_SVD.csv`: CSV file containing the word representations generated from the SVD.
 - `word_representations_SVD.xlsx`: Excel file containing the word representations generated from the SVD.
 -  I have converted **csv** file to **xlsx** because of the poor encoding in csv , the **Hindi** words were not readable, which they are in **xlsx**.
-
+- `PCA_Notes.pdf` contains my handwritten notes on **Principal Component Analysis and Singular Value Decomposition**.
 ## Code Structure
 1. **Creating the Vocabulary**
     The script creates a vocabulary from the text data and maps each word to a unique index.
