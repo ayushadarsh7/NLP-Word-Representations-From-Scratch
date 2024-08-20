@@ -1,6 +1,6 @@
 # Word Representations from scratch
 * This **Repository** contains various **Word Representations** used in **NLP** from scratch **without using any pre-existing framework.**
-* It has used word representations like **Bag of Words**, **SVD(Singular Value Decomposition)** and **Word2Vec** for representing the words.
+* I have used word representations like **Bag of Words**, **SVD(Singular Value Decomposition)** and **Word2Vec** for representing the words.
 
 ## Words used for representations
 * I have used **Hindi** words to be represented using various word representations.
